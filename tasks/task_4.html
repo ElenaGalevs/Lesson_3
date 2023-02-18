@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задача_4</title>
+</head>
+<body>
+    <h3>Задача_4</h3>
+    <h5>З клавіатури вводиться назва категорії водія (А-мотоцикл, В-легковий автомобіль, С-вантажний автомобіль). Вивести на екран назву транспортного засобу, яким він може керувати.
+    </h5>
+    <script>
+        const userLicense = prompt('введить назву категрії водия латиницею (А, В або С):','').toUpperCase();
+       
+        const licenseA = 'A';
+        const licenseB = 'B';
+        const licenseC = 'C';
+        
+        if (userLicense === licenseA) { 
+            alert('Водій мотоцикла');
+        }   else if (userLicense === licenseB) {
+                alert('Водій легкового автомобіля');
+        }   else if (userLicense === licenseC) {
+                alert('Водій вантажного автомобіля');
+        }   else {
+                alert('Або такої категорії не існує або ви ввели дані не латиницею');
+        }
+        
+
+
+    </script>
+</body>
+</html>

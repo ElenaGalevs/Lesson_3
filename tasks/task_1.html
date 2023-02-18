@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задача_1</title>
+</head>
+<body>
+    <h3>Задача_1</h3>
+    <h5>З клавіатури вводиться ціна товару і кількість грошей. Якщо грошей не вистачає то відмовляємо у покупці, інакше, якщо ще залишаються гроші, то пропонуємо купити лотерею за 4 грн.
+    </h5>
+    <script>
+        const priceOfItem = parseFloat(prompt('Enter the Item price',''));
+        const priceOfLottery = 4;
+        const moneyIsAvailable = parseFloat(prompt('Enter how much momey do you have',''));
+        const couldYouGetAnItem = moneyIsAvailable - priceOfItem;
+        
+        if (priceOfItem <= 0 || moneyIsAvailable < 0) { // перевірка коррект введених даних
+            alert ('Not correct value!');
+        }   else if 
+            (couldYouGetAnItem >= 0 && couldYouGetAnItem >= priceOfLottery ) { // чи вістачає на придбання товару та лотереі
+            alert ('Yes, you may buy the Item. Would you also like to buy a lottery ticket?');
+        }   else if (couldYouGetAnItem >= 0) {// вистачає тількі на придбання товару
+            alert ('Yes, you may buy the Item.');
+        }   else  {//не вистачає
+            alert ('You don\'t have enough money to buy this Item.');
+        }
+
+    </script>
+    
+</body>
+</html>

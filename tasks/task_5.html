@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задача_5</title>
+</head>
+<body>
+    <h3>Задача_5</h3>
+    <h5>З клавіатури вводиться номер дня тижня. Вивести на екран назву дня.
+    </h5>
+    <script>
+        const weekDayNumber = parseInt(prompt('Введить день тижня від 1 до 7:',''));
+
+        if (weekDayNumber === 1) {
+            document.write('Понеділок ');
+        } else if (weekDayNumber === 2) {
+            document.write('Вівторок ');
+        } else if (weekDayNumber === 3) {
+            document.write('Середа ');
+        } else if (weekDayNumber === 4) {
+            document.write('Четвер ');
+        } else if (weekDayNumber === 5) {
+            document.write('П\'ятниця ');
+        } else if (weekDayNumber === 6) {
+            document.write('Субота ');
+        } else if (weekDayNumber === 7) {
+            document.write('Неділя ');
+        } else {
+            document.write('немає такого дня у тижні');
+        }
+
+    </script>
+    
+</body>
+</html>

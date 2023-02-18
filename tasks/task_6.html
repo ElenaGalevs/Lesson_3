@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задача_6</title>
+</head>
+<body>
+    <h3>Задача_6</h3>
+    <h5>З клавіатури вводиться номер місяця. Вивести до якої пори він відноситься
+    </h5>
+    <script>
+        const monthNumber = parseInt(prompt('Enter the month number from 1 to 12:',''));
+        let belongToSeason;
+
+        switch (monthNumber) {
+            case 1:
+            case 2:
+            case 12: belongToSeason = "It's Winter" 
+                break;
+            case 3:
+            case 4:
+            case 5: belongToSeason = "It's Spring"
+                break;
+            case 6:
+            case 7:
+            case 8: belongToSeason = "It's Summer"
+                break;
+            case 9:
+            case 10:
+            case 11: belongToSeason = "It's Autumn"
+                break;
+            default: belongToSeason = "Incorrect data entered";
+                break;
+        };
+        document.write(`${belongToSeason}`);
+    </script>
+</body>
+</html>

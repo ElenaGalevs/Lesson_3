@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задача_3</title>
+</head>
+<body>
+    <h3>Задача_3</h3>
+    <h5>З клавіатури вводиться вік людини. Вивести на екран ким він є (дитиною у садочку, школярем, студентом, працівником, пенсіонером).
+    </h5>
+    <script>
+        const userAge = parseInt(prompt('Введить вік людини:',''));
+        // Вказано максимальний вік для визначення якої групи належить людина
+        const userStatusBaby = 6;
+        const userStatusSchool = 17;
+        const userStatusStudent = 23;
+        const userStatusEmployee = 65;
+        
+        if (userAge < userStatusBaby) {
+            alert('У цьому віці швидше за все це дитина у садочку')
+        }   else if (userAge < userStatusSchool) {
+                alert('У цьому віці швидше за все це школяр')
+        }   else if (userAge < userStatusStudent) {
+                alert('У цьому віці швидше за все це студент')
+        }   else if (userAge < userStatusEmployee) {
+                alert('У цьому віці швидше за все це працівник')
+        }   else 
+                alert('У цьому віці швидше за все пенсіонер')
+        
+    </script>
+    
+</body>
+</html>

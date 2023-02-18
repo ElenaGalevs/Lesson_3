@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задача_2</title>
+</head>
+<body>
+    <h3>Задача_2</h3>
+    <h5>Випадковим чином генерується число від 1 до 5. Спробуйте вгадати число за 2 спроби.
+    </h5>
+    <script>
+        const minNumber = 1, maxNumber = 3;
+        let randomNumber = Math.floor(Math.random() * (maxNumber-minNumber + 1) + minNumber);
+        console.log(randomNumber);
+        let message = parseInt(prompt('Спробуйте вгадати число. Введіть ваш варіант:', ''));
+        if(message != randomNumber) {
+                message = prompt('Ви не вгадали. Спробуйте ще раз:','');
+        }   
+        
+        if ( message != randomNumber) {
+                alert(`Ви не вгадали. Загадане число було: ${randomNumber}`);
+        }   else {
+                alert(`Вітаємо! Ви вгадали! Загадане число: ${randomNumber}`);
+        }       
+                
+    </script>
+    
+</body>
+</html>
